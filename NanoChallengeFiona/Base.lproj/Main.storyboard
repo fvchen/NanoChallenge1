@@ -113,13 +113,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFz-yt-kQr">
-                                <rect key="frame" x="58" y="629" width="277" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" name="startButton"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="START MY CHALLENGE"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I've survived" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms5-Di-Wyb">
                                 <rect key="frame" x="0.0" y="80" width="400" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,50 +127,50 @@
                                 <color key="textColor" name="text,tab,button"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYM-Gx-Yi9">
-                                <rect key="frame" x="69" y="191" width="72" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
-                                <color key="textColor" name="darkText"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQX-EU-DAM">
-                                <rect key="frame" x="54" y="249" width="72" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
-                                <color key="textColor" name="darkText"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOURS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbk-q0-dG3">
-                                <rect key="frame" x="145" y="249" width="189" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYM-Gx-Yi9">
+                                <rect key="frame" x="87" y="199" width="241" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
                                 <color key="textColor" name="darkText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nochocolates" translatesAutoresizingMaskIntoConstraints="NO" id="wCe-uz-zHV">
-                                <rect key="frame" x="3" y="333" width="390" height="277"/>
+                                <rect key="frame" x="0.0" y="296" width="390" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DAYS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEP-VV-v7I">
-                                <rect key="frame" x="151" y="191" width="148" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUI-Yq-no6">
+                                <rect key="frame" x="57" y="700" width="277" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
-                                <color key="textColor" name="darkText"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" name="text,tab,button"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="I CAN'T TAKE IT ANYMORE !"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="1Yy-8j-HZp" eventType="touchUpInside" id="2ZK-p2-f3m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFz-yt-kQr">
+                                <rect key="frame" x="57" y="626" width="277" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="startButton"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START MY CHALLENGE"/>
+                                <connections>
+                                    <action selector="startStopAction:" destination="1Yy-8j-HZp" eventType="touchUpInside" id="uXc-M4-fyP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Ak-6j-p9E"/>
                         <color key="backgroundColor" name="backgroundNano1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Record" image="star.fill" catalog="system" id="fI5-EX-7up"/>
                     <connections>
-                        <outlet property="dayslabel" destination="OEP-VV-v7I" id="YBE-ao-MsA"/>
-                        <outlet property="hourslabel" destination="Bbk-q0-dG3" id="IqU-nX-Ixy"/>
                         <outlet property="label1" destination="ms5-Di-Wyb" id="N1e-3C-Mft"/>
                         <outlet property="label2" destination="p73-1K-LNA" id="KL0-AM-fsx"/>
                         <outlet property="picture" destination="wCe-uz-zHV" id="WP4-1r-eSd"/>
+                        <outlet property="resetBtn" destination="bUI-Yq-no6" id="EfH-zG-jqd"/>
                         <outlet property="startBtn" destination="VFz-yt-kQr" id="Mtj-Nn-vg9"/>
+                        <outlet property="startStopBtn" destination="VFz-yt-kQr" id="Tbp-T7-vxZ"/>
+                        <outlet property="timeLabel" destination="ZYM-Gx-Yi9" id="h7D-0y-miW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8n-UI-YtE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
