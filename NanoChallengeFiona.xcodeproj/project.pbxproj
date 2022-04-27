@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524EC31E28194FAB001F5D72 /* OopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EC31D28194FAB001F5D72 /* OopsViewController.swift */; };
+		524EC32028194FCD001F5D72 /* RegretsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EC31F28194FCD001F5D72 /* RegretsViewController.swift */; };
 		52B4FAA52819343F00262A07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FAA42819343F00262A07 /* AppDelegate.swift */; };
 		52B4FAA72819343F00262A07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FAA62819343F00262A07 /* SceneDelegate.swift */; };
 		52B4FAA92819343F00262A07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FAA82819343F00262A07 /* ViewController.swift */; };
 		52B4FAAC2819343F00262A07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B4FAAA2819343F00262A07 /* Main.storyboard */; };
 		52B4FAAE2819344100262A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B4FAAD2819344100262A07 /* Assets.xcassets */; };
 		52B4FAB12819344100262A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B4FAAF2819344100262A07 /* LaunchScreen.storyboard */; };
+		52B4FAB928194EFE00262A07 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FAB828194EFE00262A07 /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		524EC31D28194FAB001F5D72 /* OopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OopsViewController.swift; sourceTree = "<group>"; };
+		524EC31F28194FCD001F5D72 /* RegretsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegretsViewController.swift; sourceTree = "<group>"; };
 		52B4FAA12819343F00262A07 /* NanoChallengeFiona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallengeFiona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B4FAA42819343F00262A07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52B4FAA62819343F00262A07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		52B4FAAD2819344100262A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52B4FAB02819344100262A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52B4FAB22819344100262A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B4FAB828194EFE00262A07 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				52B4FAA62819343F00262A07 /* SceneDelegate.swift */,
 				52B4FAA82819343F00262A07 /* ViewController.swift */,
 				52B4FAAA2819343F00262A07 /* Main.storyboard */,
+				524EC31F28194FCD001F5D72 /* RegretsViewController.swift */,
+				524EC31D28194FAB001F5D72 /* OopsViewController.swift */,
+				52B4FAB828194EFE00262A07 /* RecordViewController.swift */,
 				52B4FAAD2819344100262A07 /* Assets.xcassets */,
 				52B4FAAF2819344100262A07 /* LaunchScreen.storyboard */,
 				52B4FAB22819344100262A07 /* Info.plist */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524EC31E28194FAB001F5D72 /* OopsViewController.swift in Sources */,
+				524EC32028194FCD001F5D72 /* RegretsViewController.swift in Sources */,
 				52B4FAA92819343F00262A07 /* ViewController.swift in Sources */,
 				52B4FAA52819343F00262A07 /* AppDelegate.swift in Sources */,
 				52B4FAA72819343F00262A07 /* SceneDelegate.swift in Sources */,
+				52B4FAB928194EFE00262A07 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
