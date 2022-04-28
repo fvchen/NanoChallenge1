@@ -7,10 +7,18 @@
 
 import UIKit
 
+struct chocolates
+{
+    var name: String
+    var date: String
+}
+
 class RegretsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
