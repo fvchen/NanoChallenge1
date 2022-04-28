@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52443B1D281ADD8E00E9AAEC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52443B1C281ADD8E00E9AAEC /* TableViewCell.swift */; };
+		52443B1F281AF08600E9AAEC /* OOPSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52443B1E281AF08600E9AAEC /* OOPSTableViewCell.swift */; };
 		524EC31E28194FAB001F5D72 /* OopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EC31D28194FAB001F5D72 /* OopsViewController.swift */; };
 		524EC32028194FCD001F5D72 /* RegretsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EC31F28194FCD001F5D72 /* RegretsViewController.swift */; };
 		52B4FAA52819343F00262A07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FAA42819343F00262A07 /* AppDelegate.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52443B1C281ADD8E00E9AAEC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		52443B1E281AF08600E9AAEC /* OOPSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOPSTableViewCell.swift; sourceTree = "<group>"; };
 		524EC31D28194FAB001F5D72 /* OopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OopsViewController.swift; sourceTree = "<group>"; };
 		524EC31F28194FCD001F5D72 /* RegretsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegretsViewController.swift; sourceTree = "<group>"; };
 		52B4FAA12819343F00262A07 /* NanoChallengeFiona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallengeFiona.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +71,8 @@
 				52B4FAA82819343F00262A07 /* ViewController.swift */,
 				52B4FAAA2819343F00262A07 /* Main.storyboard */,
 				524EC31F28194FCD001F5D72 /* RegretsViewController.swift */,
+				52443B1C281ADD8E00E9AAEC /* TableViewCell.swift */,
+				52443B1E281AF08600E9AAEC /* OOPSTableViewCell.swift */,
 				524EC31D28194FAB001F5D72 /* OopsViewController.swift */,
 				52B4FAB828194EFE00262A07 /* RecordViewController.swift */,
 				52B4FAAD2819344100262A07 /* Assets.xcassets */,
@@ -152,6 +158,8 @@
 				52B4FAA92819343F00262A07 /* ViewController.swift in Sources */,
 				52B4FAA52819343F00262A07 /* AppDelegate.swift in Sources */,
 				52B4FAA72819343F00262A07 /* SceneDelegate.swift in Sources */,
+				52443B1D281ADD8E00E9AAEC /* TableViewCell.swift in Sources */,
+				52443B1F281AF08600E9AAEC /* OOPSTableViewCell.swift in Sources */,
 				52B4FAB928194EFE00262A07 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
