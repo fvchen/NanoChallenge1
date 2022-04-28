@@ -12,7 +12,7 @@ class RecordViewController: UIViewController
     @IBOutlet weak var timeLabel: UILabel!
     
     @IBOutlet weak var startStopBtn: UIButton!
-    @IBOutlet weak var resetBtn: UIButton!
+    
     
     var timerCounting:Bool = false
     var startTime:Date?
@@ -59,6 +59,19 @@ class RecordViewController: UIViewController
         {
             setStopTime(date: Date())
             stopTimer()
+            let alert = UIAlertController(title: "Are you sure?", message: "Think twice before you do it", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: {_ in
+                self.setStopTime(date: nil)
+                self.setStartTime(date: nil)
+                self.timeLabel.text = self.makeTimeString(hour: 0, min: 0, sec: 0)
+                self.stopTimer()
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { _ in
+                alert.dismiss(animated: true)
+                self.startTimer()
+            }))
+            self.present(alert, animated: true)
+//
         }
         else
         {
@@ -141,13 +154,7 @@ class RecordViewController: UIViewController
         startStopBtn.setTitleColor(UIColor.white, for: .normal)
     }
     
-    @IBAction func resetAction(_ sender: Any)
-    {
-        setStopTime(date: nil)
-        setStartTime(date: nil)
-        timeLabel.text = makeTimeString(hour: 0, min: 0, sec: 0)
-        stopTimer()
-    }
+    
     
     func setStartTime(date: Date?)
     {

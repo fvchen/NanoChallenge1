@@ -34,9 +34,6 @@
                         <color key="backgroundColor" name="backgroundNano1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Regrets" image="clock.fill" catalog="system" id="1nw-5W-xLV"/>
-                    <connections>
-                        <outlet property="pagetitle" destination="VsE-xJ-hiU" id="Ebw-dA-V9M"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,12 +91,6 @@
                         <color key="backgroundColor" name="backgroundNano1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="OOPS" image="smiley.fill" catalog="system" id="iJe-PX-7AD"/>
-                    <connections>
-                        <outlet property="consume" destination="oLj-ww-DA0" id="Qqe-yG-Ykw"/>
-                        <outlet property="pagetitle" destination="C5B-Xp-mc1" id="FBA-Eo-hhs"/>
-                        <outlet property="saveBtn" destination="neS-h5-Xyp" id="Wnr-v5-BhN"/>
-                        <outlet property="today" destination="GzP-Un-BcB" id="xWp-8T-Oit"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNM-pw-KPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,18 +129,8 @@
                                 <rect key="frame" x="-3" y="286" width="390" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUI-Yq-no6">
-                                <rect key="frame" x="57" y="663" width="277" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" name="text,tab,button"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="RESET CHALLENGE"/>
-                                <connections>
-                                    <action selector="resetAction:" destination="1Yy-8j-HZp" eventType="touchUpInside" id="2ZK-p2-f3m"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFz-yt-kQr">
-                                <rect key="frame" x="57" y="589" width="277" height="59"/>
+                                <rect key="frame" x="57" y="589" width="277" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="startButton"/>
                                 <state key="normal" title="Button"/>
@@ -164,7 +145,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Record" image="star.fill" catalog="system" id="fI5-EX-7up"/>
                     <connections>
-                        <outlet property="resetBtn" destination="bUI-Yq-no6" id="EfH-zG-jqd"/>
                         <outlet property="startStopBtn" destination="VFz-yt-kQr" id="QYN-RV-7vm"/>
                         <outlet property="timeLabel" destination="ZYM-Gx-Yi9" id="h7D-0y-miW"/>
                     </connections>
