@@ -15,7 +15,6 @@ class RegretsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var pagetitle: UILabel!
     
     /*
     // MARK: - Navigation

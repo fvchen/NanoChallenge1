@@ -10,6 +10,7 @@ import UIKit
 class RecordViewController: UIViewController
 {
     @IBOutlet weak var timeLabel: UILabel!
+    
     @IBOutlet weak var startStopBtn: UIButton!
     @IBOutlet weak var resetBtn: UIButton!
     

@@ -15,10 +15,6 @@ class OopsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var pagetitle: UILabel!
-    @IBOutlet weak var today: UILabel!
-    @IBOutlet weak var consume: UILabel!
-    @IBOutlet weak var saveBtn: UIButton!
     
     /*
     // MARK: - Navigation
