@@ -14,8 +14,14 @@ struct pickChocolate
 }
 
 
-class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate {
 
+    @IBOutlet weak var eatingDate: UITextField!
+    @IBOutlet weak var saveBtn: UIButton!
+    
+    var datePicker: UIDatePicker!
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chocolate_array.count
     }
@@ -34,6 +40,7 @@ class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         chocolate_array.append(pickChocolate(name: "CHOCO WAFER",image: "color1"))
         chocolate_array.append(pickChocolate(name: "MILK CHOCOLATE",image: "color2"))
