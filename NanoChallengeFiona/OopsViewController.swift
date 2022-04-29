@@ -19,7 +19,7 @@ class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var eatingDate: UITextField!
     @IBOutlet weak var saveBtn: UIButton!
     
-    var datePicker: UIDatePicker!
+    let datePicker = UIDatePicker()
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,7 +41,8 @@ class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+createDatePicker()
+        
         chocolate_array.append(pickChocolate(name: "CHOCO WAFER",image: "color1"))
         chocolate_array.append(pickChocolate(name: "MILK CHOCOLATE",image: "color2"))
         chocolate_array.append(pickChocolate(name: "CHOCO SPREAD",image: "color3"))
@@ -49,5 +50,29 @@ class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         chocolate_array.append(pickChocolate(name: "SNACK & DESSERT",image: "color5"))
         chocolate_array.append(pickChocolate(name: "DARK CHOCOLATE",image: "color06"))
         
+    }
+    
+    func createDatePicker() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePress))
+        toolbar.setItems([doneBtn], animated: true)
+        
+        eatingDate.inputAccessoryView = toolbar
+        
+        eatingDate.inputView = datePicker
+        
+        datePicker.datePickerMode = .date
+    }
+    @objc func donePress() {
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        
+        
+        eatingDate.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
     }
 }
