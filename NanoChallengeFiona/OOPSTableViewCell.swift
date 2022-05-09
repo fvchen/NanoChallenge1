@@ -10,7 +10,7 @@ import UIKit
 class OOPSTableViewCell: UITableViewCell {
     
     @IBOutlet var imageColor : UIImageView!
-    @IBOutlet var name : UILabel!
+    @IBOutlet var choconame : UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

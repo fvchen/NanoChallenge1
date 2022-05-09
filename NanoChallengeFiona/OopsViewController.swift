@@ -17,7 +17,8 @@ struct pickChocolate
 class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate {
 
     @IBOutlet weak var eatingDate: UITextField!
-    @IBOutlet weak var saveBtn: UIButton!
+    
+    
     
     let datePicker = UIDatePicker()
     
@@ -33,13 +34,18 @@ class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chocolateChoice", for: indexPath) as! OOPSTableViewCell
         cell.imageColor.image = UIImage(named: chocolate_array[indexPath.row].image)
-        cell.name.text = chocolate_array[indexPath.row].name
+        cell.choconame.text = chocolate_array[indexPath.row].name
         
         return cell
     }
     
+    @IBOutlet weak var saveBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        saveBtn.addTarget(self, action: #selector(tapOnButton), for: .touchUpInside)
+        
+        
         
 createDatePicker()
         
@@ -75,4 +81,14 @@ createDatePicker()
         eatingDate.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
+    
+    @objc func tapOnButton(){
+        let story = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = story.instantiateViewController(withIdentifier: "RegretsViewController") as! RegretsViewController
+//        controller.modalPresentationStyle = .fullScreen
+//        self.present(controller, animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+    }
 }
+
+
