@@ -18,7 +18,7 @@ class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBOutlet weak var eatingDate: UITextField!
     
-    
+    var index = 0
     
     let datePicker = UIDatePicker()
     
@@ -37,6 +37,10 @@ class OopsViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.choconame.text = chocolate_array[indexPath.row].name
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        index = indexPath.row
     }
     
     @IBOutlet weak var saveBtn: UIButton!
@@ -84,9 +88,11 @@ createDatePicker()
     
     @objc func tapOnButton(){
         let story = UIStoryboard(name: "Main", bundle: nil)
-//        let controller = story.instantiateViewController(withIdentifier: "RegretsViewController") as! RegretsViewController
+        let controller = story.instantiateViewController(withIdentifier: "RegretsViewController") as! RegretsViewController
 //        controller.modalPresentationStyle = .fullScreen
 //        self.present(controller, animated: true, completion: nil)
+        
+        regret_chocolate.append(chocolates(name: chocolate_array[index].name, date: eatingDate.text!, image: chocolate_array[index].image))
         self.navigationController?.popViewController(animated: true)
     }
 }

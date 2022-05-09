@@ -14,25 +14,26 @@ struct chocolates
     var image: String
 }
 
+var regret_chocolate = [chocolates]()
+
 class RegretsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chocolate_array.count
+        return regret_chocolate.count
     }
     
    
     
     
-    var chocolate_array = [chocolates]()
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chocolate_cell", for: indexPath) as! TableViewCell
-        cell.imageColor.image = UIImage(systemName: chocolate_array[indexPath.row].image)
-        cell.name.text = chocolate_array[indexPath.row].name
-        cell.date.text = chocolate_array[indexPath.row].date
+        cell.imageColor.image = UIImage(named: regret_chocolate[indexPath.row].image)
+        cell.name.text = regret_chocolate[indexPath.row].name
+        cell.date.text = regret_chocolate[indexPath.row].date
         
         return cell
     }
@@ -40,7 +41,7 @@ class RegretsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(regret_chocolate.count)
         // Do any additional setup after loading the view.
     }
 
